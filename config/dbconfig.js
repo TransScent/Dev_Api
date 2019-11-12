@@ -4,13 +4,14 @@ const con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'sakila'
+    database: 'angular'
 });
 con.connect((error) => {
     if (error) {
         console.log(error.message);
     } else {
-    console.log("Connected to Mysql Database...");
+    console.log("DataBase Connected Successfully...");
+    console.log("Server running...");
     }
 });
 module.exports = con;
