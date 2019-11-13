@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const con=require("./routers/routes")
+const router=require('./routers/usersRouters');
+app.use('/api/learning',router);
 
-app.use('./routers/routers')
+
 const port = process.env.PORT || 8020;
 app.listen(port, () => { console.log(`Server is running at port: ${port}`)});
 

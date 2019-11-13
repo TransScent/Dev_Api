@@ -1,4 +1,3 @@
-const express = require('express');
 const mysql = require('mysql');
 const con = mysql.createConnection({
     host: 'localhost',
@@ -11,7 +10,6 @@ con.connect((error) => {
         console.log(error.message);
     } else {
     console.log("DataBase Connected Successfully...");
-    console.log("Server running...");
     }
 });
 module.exports = con;
